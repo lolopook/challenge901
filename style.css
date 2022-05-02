@@ -1,0 +1,49 @@
+
+/* body */
+
+body {
+    background-color: rgba(103, 14, 54, 0.972);
+}
+
+h5, h3 {
+    padding: 10px;
+}
+
+/* nav */
+.navbar {
+    background-image: linear-gradient(, #fff , #963cff);
+}
+
+.logoLigue {
+    width: 5px;
+}
+
+/* images */
+
+.logo {
+    height: 200px;
+    width: 200px;
+}
+
+.stadium {
+    object-fit: cover;
+}
+
+/* card design */
+
+.borderCard {
+    border: solid 6px rgb(103, 14, 54);
+    background-color: #ffffff6d;
+}
+
+/* footer */
+
+.colorfooter {
+    margin-top: 20px;
+    height: 380px;
+    background-image: linear-gradient(, #fff , #963cff);
+}
+
+.colorfooter img {
+    width: 100%;
+}
