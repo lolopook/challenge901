@@ -45,14 +45,14 @@
                 <?php foreach ($teams as $team) : ?>
                     <div class="col-12 col-md-6 col-lg-4 col-xl-3 g-2 ">
                         <div class="card borderCard">
-                            <h3 class="card-title text-center"> <?= $team["strAlternate"] ?> </h3>
+                            <h4 class="card-title text-center"> <?= $team["strAlternate"] ?> </h4>
                             <img src="<?= $team["strTeamBadge"] ?>" class="img-fluid rounded mx-auto d-block logo" alt="<?= $team["strAlternate"] ?>">
                             <div class="card-body">
-                                <p class="card-text"> <?= $team["strDescriptionEN"] ?></p>
+                                <p class="card-text borderCardLight"> <?= $team["strDescriptionEN"] ?></p>
                                 <h5 class="card-text"> Date de création : <?= $team["intFormedYear"] ?> </h5>
                                 <h5 class="card-text">Maillot de l'équipe:</h5>
                                 <img src="<?= $team["strTeamJersey"] ?>" class="img-fluid rounded mx-auto d-block logo" alt="<?= $team["strAlternate"] ?>">
-                                <h5 class="card-text"> Stade : <?= $team["strStadium"] ?> </h5>
+                                <h5 id="titleStadium"  class="card-text"><?= $team["strStadium"] ?> </h5>
                                 <img src="<?= $team["strStadiumThumb"] ?>" class="img-fluid rounded mx-auto d-block stadium" alt="<?= $team["strAlternate"] ?>">
                             </div>
                         </div>
@@ -64,7 +64,7 @@
 
     <footer>
         <div class="colorfooter">
-            <img src="https://www.premierleague.com/resources/prod/v6.92.0-3875/i/bg-elements/pl-footer.svg" alt="">
+            <img class="img-fluid" src="https://www.premierleague.com/resources/prod/v6.92.0-3875/i/bg-elements/pl-footer.svg" alt="">
         </div>
     </footer>
 

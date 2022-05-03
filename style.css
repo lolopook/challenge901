@@ -5,19 +5,13 @@ body {
     background-color: #fff;
 }
 
-h5, h3 {
-    padding: 10px;
+h4, h3 {
+    padding-bottom: 20px;
 }
 
 p {
     overflow-y: scroll;
     max-height: 300px;
-}
-
-
-img {
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 /* nav */
@@ -77,15 +71,24 @@ img {
 
 .borderCard {
     border: solid 6px rgb(103, 14, 54);
+    border-radius: 30px;
     background-color: #ffffff6d;
+}
+
+.borderCardLight {
+    border: solid 2px rgb(103, 14, 54);
+}
+
+#titleStadium {
+    margin-top: 30px;
 }
 
 /* footer */
 
 .colorfooter {
     margin-top: 20px;
-    height: 390px;
-    background-image: linear-gradient(#37003c ,#e90052);
+    height: auto;
+    background-image: linear-gradient(#e90052, #37003c);
 }
 
 .colorfooter img {
