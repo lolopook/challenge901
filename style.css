@@ -2,21 +2,65 @@
 /* body */
 
 body {
-    background-color: rgba(103, 14, 54, 0.972);
+    background-color: #fff;
 }
 
 h5, h3 {
     padding: 10px;
 }
 
-/* nav */
-.navbar {
-    background-image: linear-gradient(, #fff , #963cff);
+p {
+    overflow-y: scroll;
+    max-height: 300px;
 }
 
-.logoLigue {
-    width: 5px;
+
+img {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
+/* nav */
+.navbar {
+    background-image: linear-gradient(to left,#37003c, #e90052);
+}
+
+.navColor {
+    justify-items: center;
+    justify-content: center;
+}
+
+#big-logo-nav {
+    display: flex;
+    width: 80% !important;
+}
+
+#big-logo-nav > a:hover{
+    display: block;
+    transform: scale(2.5);
+    transition: transform 0,5;
+}
+
+/* nav burger */
+
+.pos-f-t {
+    display: none;
+}
+
+
+/* title */
+
+
+.title {
+    margin-top: 130px;
+    padding: 10px 0;
+    width: 100%;
+    color: #fff;
+    background-color: #37003c;
+
+    box-shadow: 0 1px 10px #37003c;
+}
+
 
 /* images */
 
@@ -40,8 +84,8 @@ h5, h3 {
 
 .colorfooter {
     margin-top: 20px;
-    height: 380px;
-    background-image: linear-gradient(, #fff , #963cff);
+    height: 390px;
+    background-image: linear-gradient(#37003c ,#e90052);
 }
 
 .colorfooter img {
