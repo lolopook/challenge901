@@ -25,14 +25,12 @@
                 </a>
             </div>
             <div id="big-logo-nav" class="row-cols-12 d-none d-xl-flex navColor ">
-                    <?php foreach ($teams as $team) : ?>
-                        <a class="navbar-brand" href="#">
-                            <img class="" src="<?= $team["strTeamBadge"] ?> " alt="" width="40" height="35">
+                    <?php foreach ($teams as $key => $team) : ?>
+                        <a class="navbar-brand" href="./profil.php?id=<?= $key ?>">
+                            <img class="" src="<?= $team["strTeamBadge"] ?> " alt="" width="40" height="40">
                         </a>
                     <?php endforeach; ?>
             </div>
-
-
         </div>
     </nav>
 
@@ -42,15 +40,17 @@
 
     <div class="container">
         <div class="row">
-                <?php foreach ($teams as $team) : ?>
+                <?php foreach ($teams as $key => $team) : ?>
                     <div class="col-12 col-md-6 col-lg-4 col-xl-3 g-2 ">
                         <div class="card borderCard">
                             <h4 class="card-title text-center"> 
-                                <a href="./profil.php?id=">
+                                <a href="./profil.php?id=<?= $key ?>" class="navbar-brand cardTitle">
                                     <?= $team["strAlternate"] ?> 
                                 </a>    
                             </h4>
-                            <img src="<?= $team["strTeamBadge"] ?>" class="img-fluid rounded mx-auto d-block logo" alt="<?= $team["strAlternate"] ?>">
+                            <a href="./profil.php?id=<?= $key ?>">
+                                <img src="<?= $team["strTeamBadge"] ?>" class="img-fluid rounded mx-auto d-block logo" alt="<?= $team["strAlternate"] ?>">
+                            </a>
                             <div class="card-body">
                                 <p class="card-text borderCardLight"> <?= $team["strDescriptionEN"] ?></p>
                                 <h5 class="card-text"> Fondée en <?= $team["intFormedYear"] ?> </h5>
