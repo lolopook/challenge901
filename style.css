@@ -5,13 +5,18 @@ body {
     background-color: #fff;
 }
 
-h4, h3 {
+h4, h3,h2 ,h1 {
     padding-bottom: 20px;
 }
 
-p {
+.card-body > p {
     overflow-y: scroll;
     max-height: 300px;
+}
+
+#fixittop {
+    padding-top: 180px !important;
+    width: 100%;
 }
 
 /* nav */
@@ -103,7 +108,7 @@ p {
 
 @keyframes shiny {
     0% {
-        background-color:#e90052;
+        background-image: linear-gradient(to right,#37003c, #e90052);
     }
 
     50% {
@@ -115,6 +120,18 @@ p {
     }
 
     100% {
-        background-color:#37003c;
+        background-image: linear-gradient(to right, #e90052, #37003c);
     }
+}
+
+/* main profil */
+
+.span_group {
+    justify-content: space-between;
+}
+
+ul > li {
+    width: 400px;
+    height: 70px;
+
 }
